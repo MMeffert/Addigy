@@ -30,7 +30,7 @@ lpadmin -p BWPrinter -L "Middle Office Printer Area" -E -v ipp://10.11.1.127 -P 
 ```
 11. Click the **Save** button at the bottom of the page.
 
-![alt Final View Screenshot] (https://raw.githubusercontent.com/MMeffert/Addigy/main/Smart%20Software%20Install%20for%20HP%20Laserjet%20600%20M602%20Printer/FinalViewScreenshot.png)
+![alt Final View Screenshot](https://raw.githubusercontent.com/MMeffert/Addigy/main/Smart%20Software%20Install%20for%20HP%20Laserjet%20600%20M602%20Printer/FinalViewScreenshot.png)
 
 ### Complete Script ###
 ```bash
