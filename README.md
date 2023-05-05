@@ -1,4 +1,4 @@
-# Addigy
+# Addigy - An Apple Device Management Platform
 Scripts and code related to automating tasks in the Addigy MDM
 
 ## Smart Software Install for HP Laserjet 600 M602 Printer
