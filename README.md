@@ -26,7 +26,7 @@ then
 fi
 
 #Create the printer
-lpadmin -p BWPrinter -L "Middle Office Printer Area" -E -v ipp://10.11.1.127 -P "/Library/Printers/PPDs/Contents/Resources/HP LaserJet 600 M601 M602 M603.gz"
+lpadmin -p BWPrinter -o printer-is-shared=false -L "Middle Office Printer Area" -E -v ipp://10.11.1.127 -P "/Library/Printers/PPDs/Contents/Resources/HP LaserJet 600 M601 M602 M603.gz"
 ```
 11. Click the **Save** button at the bottom of the page.
 
@@ -39,11 +39,11 @@ FILE="/Library/Printers/PPDs/Contents/Resources/HP LaserJet 600 M601 M602 M603.g
 #Check if HP drivers are already installed and install if they are not
 if [ ! -f $FILE ]
 then
-/usr/sbin/installer -pkg "/Library/Addigy/ansible/packages/Install Printer - BWPrinter (1.0)/hp-printer-essentials-UniPS-6_1_0_1.pkg" -target /
+/usr/sbin/installer -pkg "/Library/Addigy/ansible/packages/Install Printer - BWPrinter (6.1.0.1)/hp-printer-essentials-UniPS-6_1_0_1.pkg" -target /
 fi
 
 #Create the printer
-lpadmin -p BWPrinter -L "Middle Office Printer Area" -E -v ipp://10.11.1.127 -P "/Library/Printers/PPDs/Contents/Resources/HP LaserJet 600 M601 M602 M603.gz"
+lpadmin -p BWPrinter -o printer-is-shared=false -L "Middle Office Printer Area" -E -v ipp://10.11.1.127 -P "/Library/Printers/PPDs/Contents/Resources/HP LaserJet 600 M601 M602 M603.gz"
 ```
 
 ### Future Updates ###
